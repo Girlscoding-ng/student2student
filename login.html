@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="transparent">
+      <div class="nav-wrapper">
+        <a href="" class="brand-logo"><img src="assets/images/logo3.PNG" alt="logo" class="student-logo"></a>
+        <a href="" class="sidenav-trigger" data-target="menu"><i class="material-icons">menu</i></a>
+        <ul class=" right hide-on-med-and-down">
+          <li><a href="index.html" class="item">Home</a></li>
+          <li><a href="about.html" class="item">About</a></li>
+          <li><a href="faq.html" class="item">FAQ</a></li>
+          <li><a href="signup.html#signup" class="menu-btn btn red z-depth-3">Sign up</a></li>
+          <li><a href="login.html#signin" class="menu-btn btn red z-depth-3">Sign in</a></li>
+        </ul>
+      </div>
+    </nav>
+   <ul class="sidenav" id="menu">
+      <li><a href="index.html" class="item">Home</a></li>
+      <li><a href="about.html" class="item">About</a></li>
+      <li><a href="faq.html" class="item">FAQ</a></li>
+      <li><a href="#signup" class="item">Sign up</a></li>
+      <li><a href="#signin" class="item">Sign in</a></li> 
+    </ul>
+</header>
+<section>
+  <div class="container signup-form">
+    <div class="row">
+      <div class="col s12 m12">
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#signup">Sign up</a>
+            </li>
+             <li class="tab col s6">
+               <a href="#signin">Sign in</a>
+             </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+    <div class="col s12" id="signup">
+      <form method="POST">
+         <h4 class="header center-align">Create your student account</h4>
+         <div class="container"> 
+           <div class="row">
+              <div class="input-field col s12 m6">
+                <input id="firstname" type="text" class="validate" required>
+                <label for="firstname">Firstname</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="last_name" type="text" class="validate" required>
+                <label for="last_name">Lastname</label>
+              </div>
+            </div>
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <select name="" id="age">
+            <option>Choose Age</option>
+            <option>11 years old</option>
+            <option>12 years old</option>
+            <option>13 years old</option>
+            <option>14 years old</option>
+            <option>15 years old</option>
+            <option>16 years old</option>
+            <option>17 years old</option>
+            <option>18 years old</option>
+            <option>19 years old</option>
+          </select>
+        </div>
+        <div class="input-field col s12 m6">
+            <select name="" id="gender">
+              <option>Choose Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+      </div>
+        <div class="row">
+          <div class="input-field col s12 m6">
+            <input id="address" type="text" class="validate" required>
+            <label for="address">Address</label>
+          </div>
+            <div class="input-field col s12 m6">
+              <input id="email" type="email" class="validate">
+              <label for="email">E-mail Address</label>
+            </div>
+        </div>
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <input id="user_name" type="text" class="validate" required>
+              <label for="user_name"> Username</label>
+            </div>
+              <div class="input-field col s12 m6">
+                <input id="password" type="password" class="validate" required>
+                <label for="password"> Input Password</label>
+              </div>
+          </div>
+         <p>By clicking sign up, you agree to our <a href="#">Terms and Condition</a></p>
+           <a href=""><button class="waves effect btn btn-small hoverable submit btn-small" id="signup">Sign Up</button></a>
+      
+          </div>
+        </form>
+      </div>
+      <div class="col s12" id="signin">
+          <form id="btnSignin">
+              <h4 class="heading center-align">Sign in to your account</h4>
+              <div class="container">
+             <div class="row">
+                 <div class="input-field col s12 m12">
+                      <input id="userName" type="text" class="validate" required>
+                      <label for="userName">Username</label>
+                 </div>
+                 <div class="input-field col s12 m12">
+                      <input id="pwd" type="password" class="validate" required>
+                      <label for="pwd">Password</label>
+              </div>
+             </div>
+             <button class="waves effect btn-small hoverable submit" id="">Sign in</button>
+            </div>
+         </form>
+
+        </div>
+    </div>
+</section>
+<footer class="footer abt-footer">
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5>Connect Us</h5>
+                <p><i class="fa fa-facebook"></i></p>
+                <p><i class="fa fa-twitter"></i></p>
+                <p><i class="fa fa-instagram"></i></p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5>Links</h5>
+                <ul class="footer-link">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="faq.html" class="item">FAQ</a></li>
+                  <li><a href="signup.html">Sign Up</a></li>
+                  <li><a href="login.html">Sign in</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m6 ">
+                <p>&copy; copyright 2019 - All rights reserved</p>
+              </div>
+              <div class="col s12 m6 ">
+                <p>Made with &#10084; from GirlsCoding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/materialize.min.js"></script>
+  <script src="./assets/js/loginscript.js"></script>
+  <script>
+      $(document).ready(function(){
+          $(".sidenav").sidenav();
+          $(".parallax").parallax();
+          $("#age").formSelect();
+          $("#gender").formSelect();
+          $(".tabs").tabs();
+      });
+  </script>
+  </body>
+  </html>
